@@ -1,0 +1,25 @@
+<section>
+    <h2>Projects</h2>
+    @if(loader){
+      <div>Loading....</div>
+    }
+    <div>
+        @for(project of projectData; track project; let id=$index) {
+           <article class="card">
+            @if(project.image) {
+             <img [src]="project.image" [alt]="project.title">
+            }
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <div style="margin-top: 10px;">
+                <a [routerLink]="['/projects',project.id]"><Details></Details>Project details</a><br>
+                @if(project.link) {
+                    <a [href]="project.link" target="_blank">Live</a>
+                }
+            </div>   
+           </article>
+        }
+       
+    </div>
+    
+</section>

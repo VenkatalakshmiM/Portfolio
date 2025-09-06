@@ -1,0 +1,15 @@
+<section>
+    <h2>Contact</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label>Name</label>
+        <input formControlName="name"/>
+        <label>Email</label>
+        <input type="email" formControlName="email"/>
+        <label>Message</label>
+        <textarea formControlName="message"></textarea>
+        <button type="submit" [disabled]="contactForm.invalid">Send</button>
+    </form>
+    @if(isSent) {
+        <p>Sent successfully!!</p>
+    }
+</section>

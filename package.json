@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod":"ng build --configuration production",
+    "preview": "npx serve -s dist/lakshmi-portfolio",
+    "deploy:gh": "npx angular-cli-ghpages --dir=dist/lakshmi-portfolio",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

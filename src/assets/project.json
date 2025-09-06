@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "title": "Angular portfolio",
+        "description": "My modern portfolio built with Angular version 18",
+        "tech": ["Angular 18", "Typescript", "CSS"],
+        "link": "https://github.com/VenkatalakshmiM/Gaming",
+        "image":"assets/img1.webp"
+    },
+    {
+        "id": "2",
+        "title": "Node portfolio",
+        "description": "My modern portfolio built with Node version 22",
+        "tech": ["Node.js", "Javascript", "Express"],
+        "link": "https://github.com/VenkatalakshmiM/gaming-backend",
+        "image":"assets/img2.webp"
+    }
+]

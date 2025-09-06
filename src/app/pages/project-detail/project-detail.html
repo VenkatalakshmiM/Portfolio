@@ -1,0 +1,17 @@
+<section>
+    @if(projectData) {
+        <div>
+            <h2>{{ projectData.title }}</h2>
+            @if(projectData.image) {
+                <img [src]="projectData.image" [alt]="projectData.title">
+            }
+            <p>{{ projectData.description }}</p>
+            <p><strong>Tech:</strong>{{projectData.tech.join(", ")}}</p>
+            @if(projectData.link) {
+                <a [href]="projectData.link" target="_blank">View live</a>
+            }
+        </div>
+    } @else {
+        <p>Project Not found!</p>
+    }
+</section>
